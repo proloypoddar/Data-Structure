@@ -3,6 +3,6 @@ def printElements(s,n):
         return
 
     printElements(s,n-1)
-    print(s[n-1])
+    print(s[n-1],end=" ")
 x=[1,2,3,4]
 printElements(x,4)
