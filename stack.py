@@ -57,7 +57,7 @@ def balance(a):
         print("This expression is NOT correct.")
     else:
         print("This expression is correct.")
-x="1+2*(3/4)"
+x="1+2*(3/4"
 balance(x)
 
 # """Solve the above problem using a linked list based stack."""
