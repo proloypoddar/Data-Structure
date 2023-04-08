@@ -1,3 +1,8 @@
+"""
+NAME: POLOK PODDAR
+ID:21301644
+"""
+"""TASK 1"""
 class KeyIndex:
     def __init__(self, a):
         self.a = a
@@ -61,7 +66,7 @@ test.test_search()
 test.test_sort()
 
 
-# ######################
+"""TASK 2"""
 #Hash function calculation, method properly written:
 def is_digit(char):
     digits = "0123456789"
