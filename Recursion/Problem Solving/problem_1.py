@@ -1,7 +1,7 @@
-def sum(n):
-    if n<=10:
-        return n
-    x=n%10
-    z=sum(n//10)
-    return(x+z)
-print(sum(12))
+def sumDigits(x):
+    if x<=10:
+        return x
+    n=x%10
+    z=sumDigits(x//10)
+    return(n+z)
+print(sumDigits(6))

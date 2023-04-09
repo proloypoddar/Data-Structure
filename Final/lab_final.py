@@ -35,29 +35,27 @@ class Stack:
         if self.tail is None:
             return None
         return self.tail.elem
+
     def is_empty(self):
         return self.head is None
-
 def prob(idx, x):
     s = Stack()
     index = 0
     for i in x:
-        while index <= idx :
-            if not s.is_empty() and s.peek() == x[index]:
-                s.pop()
-                index += 1
-            else:
-                s.push(i)
-                
-        if index == idx:
-            return True
-    return False
-
-def cheak(idx, array):
+        while index <= idx and (s.is_empty() or s.peek() != x[index]):
+            s.push(i)
+            break
+        while not s.is_empty() and s.peek() == x[index]:
+            s.pop()
+            index += 1
+            if index == idx:
+                return False
+    return True
+def check(idx, array):
     if prob(idx, array):
-        return "yes"
-    else:
         return "No"
+    else:
+        return "Yes"
 length = 5
-array = [5,1,2,4,3]
-print(cheak(length, array))  
+array = [5, 1, 2, 4, 3]
+print(check(length, array))  
