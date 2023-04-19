@@ -30,12 +30,11 @@ class Stack:
             self.tail = self.tail.prev
             self.tail.next = None
         return elem
-
+    
     def peek(self):
         if self.tail is None:
             return None
         return self.tail.elem
-
     def is_empty(self):
         return self.head is None
 def prob(idx, x):
