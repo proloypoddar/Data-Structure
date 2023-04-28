@@ -1,1 +1,1 @@
-11
+return allStar(a[1:])+"*"
