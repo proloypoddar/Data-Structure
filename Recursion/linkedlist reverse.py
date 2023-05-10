@@ -11,4 +11,4 @@ head=Singly_Node(10)
 head.next=Singly_Node(20)
 head.next.next=Singly_Node(30)
 head.next.next.next=Singly_Node(40)
-reverse(head)
+reverse(head)--
